@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .ancho {
+    max-width: 1200px;
+    /* border: 2px red solid; */
+    margin: auto;
+  }
+
+  .titulos{
+    /* border: 1px red solid; */
+    padding: 20px;
+  }
+  .titulos p{
+    font-size: 14px;
+    color: #09b1ff;
+    margin-bottom: 10px;
+  }
+  .titulos h1{
+    font-size: 40px;
+  }
+  .tab_select{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .tab_select a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 7px;
+    color: #333;
+    background-color: white;
+  }
+  .tab_select a:hover{
+    background-color: #0286ff;
+    color: white;
+  }
+
+  li.active a{
+    background-color:#0973d7 ;
+    color: white;
+  }
+
+  .tab_all{
+    display: grid;
+    grid-template: repeat(3/auto) repeat(3/auto);
+    grid-template-areas: "chat admin admin " "chat2 portafolio calendario";
+  }
+  .tab_mobil, .tab_soft, .tab_ux{
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .foto1{
+    grid-area: chat;
+  }
+  .foto2{
+    grid-area: admin;
+  }
+  .foto3{
+    grid-area: chat2;
+  }
+  .foto4{
+    grid-area: portafolio;
+  }
+  .foto5{
+    grid-area: calendario;
+  }
